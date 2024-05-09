@@ -1,0 +1,77 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 100vh;
+  min-height: 100vh;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  display: flex;
+  max-width: 450px;
+  flex-direction: column;
+  color: #fff;
+  background-color: #011111;
+  border-radius: 7px;
+  padding:12px;
+  text-align: end;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.screen-last {
+  min-height: 52px;
+  font-size: 32px;
+  opacity: 0.7;
+}
+
+.screen-current {
+  min-height: 84px;
+  font-size: 56px;
+}
+
+.buttons {
+  width: 450px;
+  height: 500px;
+}
+
+.row {
+  display: flex;
+  height: 20%; 
+}
+
+.btn {
+  width: 25%;
+  margin: 2px;
+  font-size: 32px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.btn:active {
+  color: #fff;
+  background-color: #000;
+  
+}
+
+.span-two {
+  width: 50%;
+}
