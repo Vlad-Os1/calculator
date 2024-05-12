@@ -91,6 +91,8 @@ document.addEventListener('keydown', (e) => {
   if(e.key === "/") selectOperator("÷");    
   if(e.key === "*") selectOperator("*");
   if(e.key === "=" || e.key === "Enter") evaluate();
+  if(e.key === "Backspace") deleteNum();
+  if(e.key === "Delete" || e.key === "Escape") clear();
   if(e.key === ".") addPoint();
 })
 
