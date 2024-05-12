@@ -84,6 +84,18 @@ function evaluate() {
   firstOperand = "";
 };
 
+document.addEventListener('keydown', (e) => {
+  if(e.key > 0 || e.key < 9) appendNumber(e.key);
+  if(e.key === "+") selectOperator(e.key);    
+  if(e.key === "-") selectOperator(e.key);    
+  if(e.key === "/") selectOperator("÷");    
+  if(e.key === "*") selectOperator("*");
+  if(e.key === "=" || e.key === "Enter") evaluate();
+  if(e.key === ".") addPoint();
+})
+
+
+
 
 function add(a, b) {
   return a + b;
