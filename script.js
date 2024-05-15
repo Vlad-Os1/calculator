@@ -61,6 +61,9 @@ function clear() {
 
 function addPoint() {
   if(!currentOperationScreen.textContent.includes(".")){
+    if (currentOperationScreen.textContent === ""){
+      currentOperationScreen.textContent = "0";
+    };
     currentOperationScreen.textContent = currentOperationScreen.textContent + "."
   }
 };
